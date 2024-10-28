@@ -1,0 +1,48 @@
+- [x] auto light and dark mode
+- [x] vscode theme dark mode black background
+- [x] find nice theme
+- [x] edit autocomplete path navigation
+- [x] telescope
+- [x] multi files with harpoon
+- [x] code folding
+- [x] pane splitting
+- [x] lualine
+- [x] inline errors
+- [x] inline docs how to scroll?
+- [x] remaps
+    - [x] tab back in insert mode
+    - [x] comment line
+- [x] primeagen vimrc video
+    - [x] plugins
+    - [x] sets
+    - [x] remaps
+- [x] LSP for all languages with code completion
+    - [x] Python
+    - [x] Rust
+    - [x] Dart
+    - [x] markdown
+    - [x] typst
+- [x] git integration (branches, blame, history, merging)
+    - [x] better git integration for merging and diff
+- [ ] configs
+    - [x] line numbers
+    - [x] tabs/spaces
+- [ ] Formatter for languages
+    - [x] Python
+    - [ ] Rust
+    - [ ] Dart
+    - [ ] Markdown
+    - [ ] typst
+- [ ] debugging with debug configs
+    - [ ] *Python*
+    - [ ] Rust
+    - [ ] Dart + Flutter
+    - [ ] typst preview and pdf export
+- [ ] *copilot*
+- [ ] todo tree
+- [ ] markdown pdf
+- [ ] http client
+- [ ] sql client
+- [ ] docker
+- [ ] primeagen vimrc file in git
+- [ ] tmux
