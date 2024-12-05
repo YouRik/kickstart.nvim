@@ -6,7 +6,7 @@
 -- vim.keymap.set('i', '<S-Tab>', '<C-d>', { desc = 'Tab back / unindent in insert mode' })
 
 -- Explore with netrw
--- vim.keymap.set('n', '<C-S-e>', vim.cmd.Ex, { desc = 'Explore with netrw' })
+vim.keymap.set('n', '<C-e>', vim.cmd.Ex, { desc = 'Explore with netrw' })
 
 -- Auto-indent complete file
 -- vim.keymap.set('n', '<leader>fa', 'gg=G``', { desc = 'Format complete file' })
