@@ -27,6 +27,32 @@ return {
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!
     {
+      '<F3>',
+      function()
+        require('dapui').elements.watches.add(vim.fn.expand '<cword>')
+      end,
+    },
+    {
+      '<S-F3>',
+      function()
+        require('dapui').eval()
+      end,
+    },
+    {
+      '<F4>',
+      function()
+        require('dap').close()
+      end,
+      desc = 'Debug: Stop',
+    },
+    {
+      '<S-F4>',
+      function()
+        require('dap').restart()
+      end,
+      desc = 'Debug: Restart',
+    },
+    {
       '<F5>',
       function()
         require('dap').continue()
@@ -34,11 +60,18 @@ return {
       desc = 'Debug: Start/Continue',
     },
     {
-      '<F9>',
+      '<S-F5>',
       function()
-        require('dap').step_into()
+        require('dap').run_last()
       end,
-      desc = 'Debug: Step Into',
+      desc = 'Debug: Run Last',
+    },
+    {
+      '<F6>',
+      function()
+        require('dap').run_to_cursor()
+      end,
+      desc = 'Debug: Run to Cursor',
     },
     {
       '<F8>',
@@ -48,25 +81,32 @@ return {
       desc = 'Debug: Step Over',
     },
     {
-      '<F10>',
-      function()
-        require('dap').step_out()
-      end,
-      desc = 'Debug: Step Out',
-    },
-    {
-      '<leader>b',
+      '<F9>',
       function()
         require('dap').toggle_breakpoint()
       end,
       desc = 'Debug: Toggle Breakpoint',
     },
     {
-      '<leader>B',
+      '<S-F9>',
       function()
         require('dap').set_breakpoint(vim.fn.input 'Breakpoint condition: ')
       end,
       desc = 'Debug: Set Breakpoint',
+    },
+    {
+      '<F10>',
+      function()
+        require('dap').step_into()
+      end,
+      desc = 'Debug: Step Into',
+    },
+    {
+      '<S-F10>',
+      function()
+        require('dap').step_out()
+      end,
+      desc = 'Debug: Step Out',
     },
     -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
     {
@@ -95,8 +135,8 @@ return {
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'codelldb',
-        'debugpy',
-        'dart-debug-adapter',
+        'python',
+        'dart',
       },
     }
 

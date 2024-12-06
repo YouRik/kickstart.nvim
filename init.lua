@@ -665,6 +665,9 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'autopep8',
         'typstfmt',
+        'debugpy',
+        'codelldb',
+        'dart-debug-adapter',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
