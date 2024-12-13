@@ -24,7 +24,7 @@
     - [x] typst
 - [x] git integration (branches, blame, history, merging)
     - [x] better git integration for merging and diff
-- [ ] configs
+- [x] configs
     - [x] line numbers
     - [x] tabs/spaces
 - [ ] Formatter for languages
@@ -38,7 +38,7 @@
     - [ ] Rust
     - [ ] Dart + Flutter
     - [ ] typst preview and pdf export
-- [ ] *copilot*
+- [x] *copilot*
 - [ ] todo tree
 - [ ] markdown pdf
 - [ ] http client

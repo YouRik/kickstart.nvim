@@ -43,4 +43,4 @@ vim.keymap.set('n', 'Q', '<nop>', { desc = 'Disable capital Q' })
 -- Replace word under cursor
 vim.keymap.set('n', '<leader>rw', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = '[R]eplace [W]ord under cursor in whole file' })
 
-vim.keymap.set('n', 's', '<nop>')
+-- vim.keymap.set('n', 's', '<nop>') -- needed to not clash with mini.surround
