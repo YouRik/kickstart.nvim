@@ -619,7 +619,7 @@ require('lazy').setup({
         rust_analyzer = {},
         tinymist = {},
         ast_grep = {},
-        pyright = {},
+        basedpyright = {},
         marksman = {},
         -- clangd = {},
         -- gopls = {},
