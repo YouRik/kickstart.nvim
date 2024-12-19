@@ -42,3 +42,11 @@ vim.keymap.set('n', 'Q', '<nop>', { desc = 'Disable capital Q' })
 
 -- Replace word under cursor
 vim.keymap.set('n', '<leader>rw', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = '[R]eplace [W]ord under cursor in whole file' })
+
+-- Copy document path
+vim.keymap.set('n', '<leader>drp', [[:let @*=expand("%")<CR>]], { desc = 'Copy [D]ocument [R]elative [P]ath to clipboard' })
+
+-- Set light mode
+vim.keymap.set('n', '<leader>bl', [[:set background=light<CR>]], { desc = 'Set [B]ackground to [L]ight' })
+-- Set dark mode
+vim.keymap.set('n', '<leader>bd', [[:set background=dark<CR>]], { desc = 'Set [B]ackground to [D]ark' })
