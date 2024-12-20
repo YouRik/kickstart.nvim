@@ -27,16 +27,16 @@ return {
         :find()
     end
 
-    vim.keymap.set('n', '<C-S-e>', function()
-      toggle_telescope(harpoon:list())
-    end, { desc = 'Open harpoon window in telescope' })
+    -- vim.keymap.set('n', '<C-S-e>', function()
+    --   toggle_telescope(harpoon:list())
+    -- end, { desc = 'Open harpoon window in telescope' })
     vim.keymap.set('n', '<leader>e', function()
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end, { desc = 'Open harpoon window' })
 
-    vim.keymap.set('n', '<leader>a', function()
-      harpoon:list():add()
-    end, { desc = 'Add to harpoon list' })
+    -- vim.keymap.set('n', '<leader>a', function()
+    --   harpoon:list():add()
+    -- end, { desc = 'Add to harpoon list' })
 
     vim.keymap.set('n', '<leader>h', function()
       harpoon:list():select(1)
