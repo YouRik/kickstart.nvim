@@ -27,15 +27,15 @@
 - [x] configs
     - [x] line numbers
     - [x] tabs/spaces
-- [ ] Formatter for languages
+- [x] Formatter for languages
     - [x] Python
-    - [ ] typst
+    - [x] typst
     - [ ] Markdown
     - [ ] Dart
     - [ ] Rust
 - [ ] debugging with debug configs
     - [x] *Python*
-    - [ ] typst preview and pdf export
+    - [x] typst preview
     - [ ] Dart + Flutter
     - [ ] Rust
 - [x] *copilot*
