@@ -29,20 +29,20 @@
     - [x] tabs/spaces
 - [ ] Formatter for languages
     - [x] Python
-    - [ ] Rust
-    - [ ] Dart
-    - [ ] Markdown
     - [ ] typst
-- [ ] debugging with debug configs
-    - [ ] *Python*
+    - [ ] Markdown
+    - [ ] Dart
     - [ ] Rust
-    - [ ] Dart + Flutter
+- [ ] debugging with debug configs
+    - [x] *Python*
     - [ ] typst preview and pdf export
+    - [ ] Dart + Flutter
+    - [ ] Rust
 - [x] *copilot*
-- [ ] todo tree
+- [ ] sql client
 - [ ] markdown pdf
 - [ ] http client
-- [ ] sql client
-- [ ] docker
+- [ ] todo tree
 - [ ] primeagen vimrc file in git
-- [ ] tmux
+- [ ] docker
+- [x] tmux
