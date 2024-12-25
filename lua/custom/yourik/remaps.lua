@@ -44,7 +44,11 @@ vim.keymap.set('n', 'Q', '<nop>', { desc = 'Disable capital Q' })
 vim.keymap.set('n', '<leader>rw', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = '[R]eplace [W]ord under cursor in whole file' })
 
 -- Copy document path
-vim.keymap.set('n', '<leader>drp', [[:let @*=expand("%")<CR>]], { desc = 'Copy [D]ocument [R]elative [P]ath to clipboard' })
+vim.keymap.set('n', '<leader>dpr', [[:let @*=expand("%")<CR>]], { desc = 'Copy [D]ocument [P]ath [R]elative to clipboard' })
+vim.keymap.set('n', '<leader>dpf', [[:let @*=expand("%:p")<CR>]], { desc = 'Copy [D]ocument [P]ath [F]ull to clipboard' })
+vim.keymap.set('n', '<leader>dpd', [[:let @*=expand("%:p:h")<CR>]], { desc = 'Copy [D]ocument [P]ath [D]irectory to clipboard' })
+vim.keymap.set('n', '<leader>dpe', [[:let @*=expand("%:e")<CR>]], { desc = 'Copy [D]ocument [P]ath [E]xtension to clipboard' })
+vim.keymap.set('n', '<leader>dps', [[:let @*=expand("%:t")<CR>]], { desc = 'Copy [D]ocument [P]ath [S]hort to clipboard' })
 
 -- Set light mode
 vim.keymap.set('n', '<leader>bl', [[:set background=light<CR>]], { desc = 'Set [B]ackground to [L]ight' })
