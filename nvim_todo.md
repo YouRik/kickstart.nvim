@@ -39,7 +39,7 @@
     - [ ] Dart + Flutter
     - [ ] Rust
 - [x] *copilot*
-- [ ] sql client
+- [x] sql client
 - [ ] markdown pdf
 - [ ] http client
 - [ ] todo tree
