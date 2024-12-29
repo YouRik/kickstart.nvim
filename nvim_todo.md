@@ -31,12 +31,12 @@
     - [x] Python
     - [x] typst
     - [ ] Markdown
-    - [ ] Dart
+    - [x] Dart
     - [ ] Rust
 - [ ] debugging with debug configs
     - [x] *Python*
     - [x] typst preview
-    - [ ] Dart + Flutter
+    - [x] Dart + Flutter
     - [ ] Rust
 - [x] *copilot*
 - [x] sql client
