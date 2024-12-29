@@ -41,6 +41,7 @@
 - [x] *copilot*
 - [x] sql client
 - [ ] markdown pdf
+- [ ] jupyter notebooks
 - [ ] http client
 - [ ] todo tree
 - [ ] primeagen vimrc file in git
