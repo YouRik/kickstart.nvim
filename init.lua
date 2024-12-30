@@ -325,6 +325,8 @@ require('lazy').setup({
         { '<leader><leader>', group = 'Hop', mode = { 'n', 'v', 'o' } },
         { '<leader>dp', group = 'Copy [D]ocument [P]ath', 'n' },
         { '<leader>b', group = 'Set [B]ackground', 'n' },
+        { '<leader>f', group = '[F]lutter', 'n' },
+        { '<leader>q', group = '[Q]uery HTTP client', 'n' },
       },
     },
   },
