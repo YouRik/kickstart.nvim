@@ -47,3 +47,4 @@
 - [ ] primeagen vimrc file in git
 - [ ] docker
 - [x] tmux
+- [ ] setup formatters correctly with other plugin

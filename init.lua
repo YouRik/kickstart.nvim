@@ -673,6 +673,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'autopep8',
         'typstfmt',
+        'sql-formatter',
         'debugpy',
         'codelldb',
         'dart-debug-adapter',
@@ -731,6 +732,9 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        python = { 'autopep8' },
+        typst = { 'typstfmt' },
+        sql = { 'sql-formatter' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
