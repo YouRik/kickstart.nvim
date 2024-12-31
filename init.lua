@@ -893,6 +893,10 @@ require('lazy').setup({
     event = 'VimEnter',
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = { signs = false, highlight = { comments_only = false } },
+    config = function(_, opts)
+      require('todo-comments').setup(opts)
+      vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope<CR>', { noremap = true, silent = true, desc = '[S]earch [T]odos' })
+    end,
   },
 
   { -- Collection of various small independent plugins/modules
