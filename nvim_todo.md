@@ -22,6 +22,7 @@
     - [x] Dart
     - [x] markdown
     - [x] typst
+    - [ ] typescript
 - [x] git integration (branches, blame, history, merging)
     - [x] better git integration for merging and diff
 - [x] configs
@@ -33,18 +34,20 @@
     - [ ] Markdown
     - [x] Dart
     - [ ] Rust
+    - [ ] typescript
 - [ ] debugging with debug configs
     - [x] *Python*
     - [x] typst preview
     - [x] Dart + Flutter
     - [ ] Rust
+    - [ ] typescript
 - [x] *copilot*
 - [x] sql client
 - [ ] markdown pdf
 - [ ] jupyter notebooks
-- [ ] http client
+- [x] http client
 - [ ] todo tree
 - [ ] primeagen vimrc file in git
 - [ ] docker
 - [x] tmux
-- [ ] setup formatters correctly with other plugin
+- [ ] fix formatter for sql
