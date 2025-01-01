@@ -735,6 +735,7 @@ require('lazy').setup({
         python = { 'autopep8' },
         typst = { 'typstfmt' },
         sql = { 'sql-formatter' },
+        dart = { 'ast_grep' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
