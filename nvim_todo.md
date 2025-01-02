@@ -22,7 +22,7 @@
     - [x] Dart
     - [x] markdown
     - [x] typst
-    - [ ] typescript
+    - [x] typescript
 - [x] git integration (branches, blame, history, merging)
     - [x] better git integration for merging and diff
 - [x] configs
@@ -34,13 +34,13 @@
     - [ ] Markdown
     - [x] Dart
     - [ ] Rust
-    - [ ] typescript
+    - [x] typescript
 - [ ] debugging with debug configs
     - [x] *Python*
     - [x] typst preview
     - [x] Dart + Flutter
     - [ ] Rust
-    - [ ] typescript
+    - [x] typescript
 - [x] *copilot*
 - [x] sql client
 - [ ] markdown pdf

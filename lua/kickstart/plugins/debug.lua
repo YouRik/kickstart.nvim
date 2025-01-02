@@ -22,7 +22,8 @@ return {
     'jay-babu/mason-nvim-dap.nvim',
 
     -- Add your own debuggers here
-    'leoluz/nvim-dap-go',
+    -- 'leoluz/nvim-dap-go',
+    'mfussenegger/nvim-dap-python',
   },
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!
@@ -121,6 +122,54 @@ return {
     local dap = require 'dap'
     local dapui = require 'dapui'
 
+    -- Set up the js debug adapter https://github.com/mxsdev/nvim-dap-vscode-js/issues/63#issuecomment-1801935986
+    dap.adapters['pwa-node'] = {
+      type = 'server',
+      host = 'localhost',
+      port = '${port}', --let both ports be the same for now...
+      executable = {
+        command = 'node',
+        -- -- 💀 Make sure to update this path to point to your installation
+        args = { vim.fn.stdpath 'data' .. '/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js', '${port}' },
+        -- command = "js-debug-adapter",
+        -- args = { "${port}" },
+      },
+    }
+
+    for _, language in ipairs { 'typescript', 'javascript' } do
+      dap.configurations[language] = {
+        {
+          type = 'pwa-node',
+          request = 'launch',
+          name = 'Launch Current File (pwa-node)',
+          cwd = '${workspaceFolder}', -- vim.fn.getcwd(),
+          args = { '${file}' },
+          sourceMaps = true,
+          protocol = 'inspector',
+          console = 'integratedTerminal',
+        },
+        {
+          type = 'pwa-node',
+          request = 'launch',
+          name = 'Launch Current File (Typescript)',
+          cwd = '${workspaceFolder}',
+          runtimeArgs = { '-r', 'ts-node/register' },
+          program = '${file}',
+          runtimeExecutable = 'node',
+          -- args = { '${file}' },
+          sourceMaps = true,
+          protocol = 'inspector',
+          console = 'integratedTerminal',
+          outFiles = { '${workspaceFolder}/**/**/*', '!**/node_modules/**' },
+          skipFiles = { '<node_internals>/**', 'node_modules/**' },
+          resolveSourceMapLocations = {
+            '${workspaceFolder}/**',
+            '!**/node_modules/**',
+          },
+        },
+      }
+    end
+
     require('mason-nvim-dap').setup {
       -- Makes a best effort to setup the various debuggers with
       -- reasonable debug configurations
@@ -137,6 +186,7 @@ return {
         'codelldb',
         'python',
         'dart',
+        'js',
       },
     }
 
@@ -178,13 +228,15 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
+    require('dap-python').setup '~/.virtualenvs/debugpy/bin/python'
+
     -- Install golang specific config
-    require('dap-go').setup {
-      delve = {
-        -- On Windows delve must be run attached or it crashes.
-        -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
-        detached = vim.fn.has 'win32' == 0,
-      },
-    }
+    -- require('dap-go').setup {
+    --   delve = {
+    --     -- On Windows delve must be run attached or it crashes.
+    --     -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
+    --     detached = vim.fn.has 'win32' == 0,
+    --   },
+    -- }
   end,
 }
