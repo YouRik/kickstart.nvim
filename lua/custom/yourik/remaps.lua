@@ -32,6 +32,7 @@ vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previous and keep in center' })
 -- Copy into and paste from clipboard
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["*y]], { desc = 'Yank into clipboard' })
 vim.keymap.set('n', '<leader>Y', [["*Y]], { desc = 'Yank line into clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<leader>P', [["*P]], { desc = 'Paste from clipboard before position' })
 vim.keymap.set({ 'n', 'v' }, '<leader>p', [["*p]], { desc = 'Paste from clipboard' })
 
 -- Delete to void register
