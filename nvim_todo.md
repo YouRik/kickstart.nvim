@@ -10,38 +10,39 @@
 - [x] inline errors
 - [x] inline docs how to scroll?
 - [x] remaps
-    - [x] tab back in insert mode
-    - [x] comment line
+  - [x] tab back in insert mode
+  - [x] comment line
 - [x] primeagen vimrc video
-    - [x] plugins
-    - [x] sets
-    - [x] remaps
+  - [x] plugins
+  - [x] sets
+  - [x] remaps
 - [x] LSP for all languages with code completion
-    - [x] Python
-    - [x] Rust
-    - [x] Dart
-    - [x] markdown
-    - [x] typst
-    - [x] typescript
+  - [x] Python
+  - [x] Rust
+  - [x] Dart
+  - [x] markdown
+  - [x] typst
+  - [x] typescript
 - [x] git integration (branches, blame, history, merging)
-    - [x] better git integration for merging and diff
+  - [x] better git integration for merging and diff
 - [x] configs
-    - [x] line numbers
-    - [x] tabs/spaces
+  - [x] line numbers
+  - [x] tabs/spaces
 - [x] Formatter for languages
-    - [x] Python
-    - [x] typst
-    - [ ] Markdown
-    - [x] Dart
-    - [ ] Rust
-    - [x] typescript
+  - [x] JSON
+  - [x] Python
+  - [x] typst
+  - [x] Markdown
+  - [x] Dart
+  - [ ] Rust
+  - [x] typescript
 - [ ] debugging with debug configs
-    - [x] *Python*
-    - [x] typst preview
-    - [x] Dart + Flutter
-    - [ ] Rust
-    - [x] typescript
-- [x] *copilot*
+  - [x] _Python_
+  - [x] typst preview
+  - [x] Dart + Flutter
+  - [ ] Rust
+  - [x] typescript
+- [x] _copilot_
 - [x] sql client
 - [ ] markdown pdf
 - [ ] jupyter notebooks

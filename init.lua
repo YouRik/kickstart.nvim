@@ -674,9 +674,12 @@ require('lazy').setup({
         'autopep8',
         'typstfmt',
         'sql-formatter',
+        'sqlfmt',
         'debugpy',
         'codelldb',
         'dart-debug-adapter',
+        'prettierd',
+        'prettier',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -734,8 +737,10 @@ require('lazy').setup({
         lua = { 'stylua' },
         python = { 'autopep8' },
         typst = { 'typstfmt' },
-        sql = { 'sql-formatter' },
+        sql = { 'sql-formatter', 'sqlfmt', stop_after_first = true },
         dart = { 'ast_grep' },
+        json = { 'prettierd', 'prettier', stop_after_first = true },
+        markdown = { 'prettierd', 'prettier', stop_after_first = true },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
