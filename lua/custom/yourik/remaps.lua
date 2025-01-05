@@ -20,7 +20,10 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selected lines down'
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selected lines up' })
 
 -- Keep cursor where it was (or in center)
-vim.keymap.set('n', 'J', 'mzJ`z', { desc = 'Join and keep cursor at position' })
+vim.keymap.set('n', 'J', function()
+  local count = vim.v.count1
+  vim.cmd('normal! mz' .. count .. 'J`z')
+end, { desc = 'Join and keep cursor at position' })
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Down half page and keep cursor in center' })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Up half page and keep cursor in center' })
 vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next and keep in center' })
