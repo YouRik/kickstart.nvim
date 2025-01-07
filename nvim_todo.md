@@ -31,11 +31,12 @@
 - [x] Formatter for languages
   - [x] JSON
   - [x] Python
-  - [x] typst
+  - [ ] typst (set up manually)
   - [x] Markdown
   - [x] Dart
   - [ ] Rust
   - [x] typescript
+  - [ ] SQL (set up new one manually)
 - [ ] debugging with debug configs
   - [x] _Python_
   - [x] typst preview
@@ -51,4 +52,3 @@
 - [ ] primeagen vimrc file in git
 - [ ] docker
 - [x] tmux
-- [ ] fix formatter for sql

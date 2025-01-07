@@ -672,7 +672,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'autopep8',
-        'typstfmt',
+        -- 'typstfmt',
         'sql-formatter',
         'sqlfmt',
         'debugpy',
@@ -736,7 +736,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         python = { 'autopep8' },
-        typst = { 'typstfmt' },
+        -- typst = { 'typstfmt' },
         sql = { 'sql-formatter', 'sqlfmt', stop_after_first = true },
         dart = { 'ast_grep' },
         json = { 'prettierd', 'prettier', stop_after_first = true },
