@@ -5,7 +5,10 @@ return {
     require('rose-pine').setup {
       dark_variant = 'main',
       extend_background_behind_borders = true,
-      dim_inactive_windows = true,
+      dim_inactive_windows = false,
+      styles = {
+        transparency = true,
+      },
     }
     vim.cmd 'colorscheme rose-pine'
   end,
